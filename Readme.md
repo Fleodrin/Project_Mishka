@@ -1,7 +1,3 @@
----
-permalink: source/index.html
----
-
 # Личный проект «Мишка» 
 
 * Студент: [Владимир Кривицкий](https://up.htmlacademy.ru/adaptive/26/user/2044883).
