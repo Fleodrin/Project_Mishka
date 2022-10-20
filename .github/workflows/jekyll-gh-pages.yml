@@ -27,12 +27,6 @@ jobs:
     steps:
       - name: Setup Node.js environment
       - uses: actions/setup-node@v3.5.1
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
@@ -42,6 +36,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Install Dependencies
+      - run: npm install
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
