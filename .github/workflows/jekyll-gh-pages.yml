@@ -36,8 +36,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Install Dependencies
-      - run: npm install
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
